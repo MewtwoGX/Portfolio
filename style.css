@@ -1,0 +1,376 @@
+*,
+*::after,
+*::before {
+margin: 0;
+padding: 0;
+}
+
+html {
+font-size: 62.5%;
+scroll-behavior: smooth; 
+}
+
+body {
+box-sizing: border-box;
+position: relative;
+line-height: 1.5;
+font-family: Georgia, 'Times New Roman', Times, serif;
+overflow-x: hidden;
+overflow-y: scroll;
+font-family: 'Georgia', sans-serif; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+    
+li {
+    list-style: none; 
+}
+    
+
+/***********************************************
+    Cette section est dédié au header
+***********************************************/
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: #fafafa;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); 
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:10px ; 
+}
+
+.header_logo-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    transition: color .3s; 
+}
+
+.header_logo-img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 1.5rem;
+    background: #0062b9; 
+}
+
+.header-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block; 
+}
+
+.header_link {
+    display: flex; 
+}
+
+.link {
+    padding: 2.2rem 3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color .3s; 
+}
+
+.link:hover {
+    color: #0062b9; 
+}
+
+/***********************************************
+***********************************************/
+
+/***********************************************
+    Cette section est dédié à la section home
+***********************************************/
+.home{
+    color: #fff;
+    background: #415A77;
+    background-position: center;
+    height: 100vh;
+    min-height: 80rem;
+    max-height: 120rem;
+    position: relative; 
+}
+
+.home-présa_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90rem;
+    width: 92%; 
+}
+
+.heading-primary {
+    font-size: 6rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.text-primary {
+    color: #fff;
+    font-size: 2.2rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6;
+}
+
+.home_info {
+    margin: 3rem auto 0 auto;
+    max-width: 80rem; 
+}
+  
+.home_cta {
+    margin-top: 5rem;
+    text-align: center; 
+}
+
+/***********************************************
+***********************************************/
+
+/***********************************************
+    Cette section est dédié à la section about
+***********************************************/
+
+.about {
+    background: #e0e1dd; 
+}
+
+.pad {
+    padding: 12rem 0;
+}
+
+.main-container {
+    max-width: 120rem;
+    margin: auto;
+    width: 92%;
+}
+
+.heading-sec {
+    margin-bottom: 11rem; 
+}
+
+.heading-sec_main {
+    display: block;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    position: relative; 
+}
+    
+.about_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem; 
+}
+    
+.about_content-title {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 3rem; 
+}
+  
+.about_content-details-para {
+    font-size: 1.8rem;
+    color: grey;
+    max-width: 60rem;
+    line-height: 1.7;
+    margin-bottom: 1rem; 
+}
+    
+.about_content-details-para--hl {
+    font-weight: 700;
+    margin: 0 3px; 
+}
+    
+.about_content-details-para:last-child {
+    margin-bottom: 4rem; 
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.skills_list {
+      padding: 1rem 2rem;
+      margin-bottom: 1.5rem;
+      margin-right: 1.5rem;
+      font-size: 1.6rem;
+      background: #778DA9;
+      border-radius: 5px;
+      font-weight: 600;
+      color: #ffffff; 
+}
+
+/***********************************************
+***********************************************/
+
+/***********************************************
+    Cette section est dédié à la section project
+***********************************************/
+
+.projets {
+    background-color: #415A77;
+    color: white;
+}
+
+.projects_row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 5rem;
+    margin-bottom: 11rem; 
+}
+
+.projects_row-img {
+    overflow: hidden; 
+}
+
+.projects-img {
+    width: 100%;
+    display: block;
+     object-fit: cover; 
+}
+          
+.projects_row-content {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.projects_row-content-title {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 2rem; 
+}
+
+.projects_row-content-desc {
+    font-size: 1.8rem;
+    max-width: 60rem;
+    line-height: 1.7;
+    margin-bottom: 3rem; 
+}
+
+.btn {
+    background: #f4f5f2;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    transition: transform .3s; 
+}
+
+.btn:hover {
+    transform: translateY(-3px); 
+}
+
+.btn-bg {
+      padding: 1.5rem 8rem;
+      font-size: 2rem; 
+}
+
+.btn-med {
+      padding: 1.5rem 5rem;
+      font-size: 1.6rem; 
+}
+
+.btn-theme {
+      background: #E0E1DD;
+      color: #080808;
+      margin-bottom: 1rem;
+}
+/***********************************************
+***********************************************/
+
+/***********************************************
+    Cette section est dédié à la section footer
+***********************************************/
+
+.main-footer {
+    background: #0D1B2A;
+    color: #fff; 
+}
+    
+.main-footer_upper {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0; 
+}
+    
+.main-footer_row-1 {
+    order: 2; 
+}
+        
+.main-footer_row-2 {
+    width: 40%;
+    order: 1;
+    max-width: 50rem; 
+}
+        
+.main-footer_short-desc {
+    margin-top: 2rem;
+    color: #eee;
+    font-size: 1.5rem;
+    line-height: 1.7; 
+}
+
+.main-footer_short-desc a {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 2px;
+}
+    
+.main-footer_social-cont {
+    margin-bottom: 0.5rem; 
+}
+    
+.main-footer_icon {
+    margin-right: 1rem;
+    width: 2.5rem; 
+}
+    
+.main-footer_lower {
+    padding: 4rem 0;
+    border-top: 1px solid #444;
+    color: #eee;
+    font-size: 1.2rem;
+    text-align: center; 
+}
+    
+.heading-sm {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+/***********************************************
+***********************************************/
+    
+    
