@@ -28,8 +28,12 @@ a {
 li {
     list-style: none; 
 }
-    
 
+.link.btn-scro{
+    background: #f4f5f2;
+    border-radius: 5px;
+    margin: 0.5em;
+}
 /***********************************************
     Cette section est dédié au header
 ***********************************************/
@@ -38,8 +42,15 @@ li {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    background: #fafafa;
-    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); 
+    background: #fafafa;;
+    transition: background-color 0.2s ease-in-out; 
+}
+
+.scrolled{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: none;
 }
 
 .header_content {
@@ -80,6 +91,7 @@ li {
 
 .link {
     padding: 2.2rem 3rem;
+    margin: 0.5em;
     display: inline-block;
     font-size: 1.6rem;
     color: #333;
