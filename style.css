@@ -33,6 +33,7 @@ li {
     background: #f4f5f2;
     border-radius: 5px;
     margin: 0.5em;
+    transition: background-color 0.2s ease-in-out;
 }
 /***********************************************
     Cette section est dédié au header
